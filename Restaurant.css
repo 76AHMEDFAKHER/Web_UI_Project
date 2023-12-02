@@ -1,0 +1,87 @@
+.gallary1 {
+    background: white;
+    width: 300px;
+    height: 300px;
+    display: inline-flex;
+    border-radius: 30px;
+    flex-flow: column wrap;
+    left: 0;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+
+    padding: 50px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+.Restaurant1 :nth-child(1) {
+    text-transform: uppercase;
+}
+
+.Restaurant1 :nth-child(2) {
+    text-transform: uppercase;
+}
+
+.Restaurant1 :nth-child(3) {
+    max-width: 500px;
+    max-height: 300px;
+    height: 100px;
+
+    /* border: 20px solid yellow; */
+}
+
+.Restaurant1:nth-child(4) {
+    text-transform: uppercase;
+}
+
+body {
+
+    gap: 10px;
+    background: linear-gradient(175deg,
+            hsl(193deg 31% 94%) 0%,
+            hsl(69deg 21% 92%) 16%,
+            hsl(48deg 44% 89%) 20%,
+            hsl(45deg 61% 87%) 25%,
+            hsl(44deg 73% 84%) 30%,
+            hsl(42deg 77% 81%) 34%,
+            hsl(35deg 67% 83%) 37%,
+            hsl(21deg 54% 85%) 40%,
+            hsl(354deg 41% 86%) 43%,
+            hsl(323deg 39% 84%) 45%,
+            hsl(309deg 39% 83%) 50%,
+            hsl(309deg 39% 83%) 55%,
+            hsl(309deg 39% 83%) 57%,
+            hsl(309deg 39% 83%) 60%,
+            hsl(309deg 39% 83%) 64%,
+            hsl(297deg 33% 82%) 69%,
+            hsl(282deg 37% 83%) 70%,
+            hsl(268deg 40% 83%) 75%,
+            hsl(256deg 43% 83%) 85%,
+            hsl(244deg 47% 83%) 100%) no-repeat;
+
+    height: 1000px;
+    display: flex;
+    padding: 30px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:480px) {
+    body {
+        height: 300px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
