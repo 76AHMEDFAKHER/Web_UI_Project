@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ser.css">
+    <title>Servics</title>
+</head>
+<body>
+
+    
+    <!-- <input class="budget"  type="text" name="budget" placeholder="Enter your budget"> -->
+    
+    
+    <h2>Select Destination</h2>
+    
+    <div class="Destination">
+    <input type="button" value="Cairo">
+    <input type="button" value="Giza">
+    <input type="button" value="Marsa Matroh">
+    <input type="button" value="Alexandria">
+    <input type="button" value="Aswan">
+    <input type="button" value="Elsahel">
+    <input type="button" value="Dahb">
+    </div>
+
+
+    <h2>Select service</h2>
+    
+    <div class="service">
+        <button class="Resturant_button" data-src="./Restaurants.html">Resturant</button>
+        <button class="Resturant_button" data-src="./Hospital.html">Hospital</button>
+        <button class="Resturant_button" data-src="./famous destination.html">Famous Distination</button>
+        
+        <button class="Resturant_button" data-src="./supermarkets.html">Supermarkets</button>
+        <button class="Resturant_button" data-src="./transports.html">Transports</button>
+        
+    </div>
+
+    
+    <hr>
+
+    
+    <iframe id="myframe" width="100%" height="100%" scrolling="yes" frameborder="0" src=""></iframe>
+    
+    
+
+    </iframe>
+    
+    <script>
+        var buttons=document.querySelectorAll(".Resturant_button");
+        var iframe=document.getElementById("myframe");
+        buttons.forEach(function(button){
+            button.addEventListener("click",function(){
+                var src= this.getAttribute("data-src");
+                iframe.src=src;
+            })
+        })
+    </script>
+
+</body>
+</html>
